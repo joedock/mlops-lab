@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow-server
+  namespace: mlflow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlflow-server
+  template:
+    metadata:
+      labels:
+        app: mlflow-server
+    spec:
+      initContainers:
+        - name: wait-for-minio
+          image: busybox:1.35
+          command: ['sh', '-c', 'until nc -z minio 9000; do echo waiting; sleep 2; done']
+      containers:
+        - name: mlflow-server
+          image: ghcr.io/mlflow/mlflow:v2.13.0
+          command:
+            - mlflow
+            - server
+            - --host=0.0.0.0
+            - --port=5000
+            - --default-artifact-root=s3://mlflow/artifacts
+            - --backend-store-uri=sqlite:///mlflow.db
+          ports:
+            - containerPort: 5000
+          env:
+            - name: MLFLOW_S3_ENDPOINT_URL
+              value: "http://minio:9000"
+            - name: AWS_ACCESS_KEY_ID
+              value: "minioadmin"
+            - name: AWS_SECRET_ACCESS_KEY
+              value: "minioadmin123"
+            - name: MLFLOW_S3_IGNORE_TLS
+              value: "true"
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mlflow-service
+  namespace: mlflow
+spec:
+  selector:
+    app: mlflow-server
+  ports:
+    - port: 5000
+      targetPort: 5000
+  type: NodePort

@@ -1,0 +1,49 @@
+2026/03/24 09:06:03 INFO mlflow.tracking.fluent: Experiment with name 'diabetes-regression' does not exist. Creating a new experiment.
+2026/03/24 09:06:04 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:04 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+ridge_alpha_0.1        RMSE=53.4  R2=0.461
+🏃 View run ridge_alpha_0.1 at: http://localhost:5000/#/experiments/2/runs/e10e20823e694fb2b789d388858e8025
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+2026/03/24 09:06:06 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:06 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+ridge_alpha_1.0        RMSE=55.5  R2=0.419
+🏃 View run ridge_alpha_1.0 at: http://localhost:5000/#/experiments/2/runs/0976ccaef2f2433bbc40124dccd5627e
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+2026/03/24 09:06:08 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:08 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+ridge_alpha_10.0       RMSE=66.7  R2=0.161
+🏃 View run ridge_alpha_10.0 at: http://localhost:5000/#/experiments/2/runs/8c96b61b3949401d803f2ee2945164b0
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+2026/03/24 09:06:10 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:10 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+rf_50_trees            RMSE=53.5  R2=0.460
+🏃 View run rf_50_trees at: http://localhost:5000/#/experiments/2/runs/71f17929e6684817916c9ce4d059ec89
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+2026/03/24 09:06:11 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:12 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+rf_100_trees           RMSE=53.7  R2=0.456
+🏃 View run rf_100_trees at: http://localhost:5000/#/experiments/2/runs/3157b1f2d2f94c8da96bd6d4c2d808af
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+2026/03/24 09:06:14 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:14 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+rf_200_deep            RMSE=54.5  R2=0.440
+🏃 View run rf_200_deep at: http://localhost:5000/#/experiments/2/runs/10f0cd8cd6104727ae423d384c2398e8
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+2026/03/24 09:06:15 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:16 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+gbm_lr_0.05            RMSE=52.8  R2=0.474
+🏃 View run gbm_lr_0.05 at: http://localhost:5000/#/experiments/2/runs/463a75f3eacb479ea8841a5fe47872ec
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+2026/03/24 09:06:17 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:18 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+gbm_lr_0.1             RMSE=53.8  R2=0.453
+🏃 View run gbm_lr_0.1 at: http://localhost:5000/#/experiments/2/runs/70476cbad5c945ab9f57e751ceb750fe
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+2026/03/24 09:06:19 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+2026/03/24 09:06:20 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+gbm_lr_0.2             RMSE=58.7  R2=0.349
+🏃 View run gbm_lr_0.2 at: http://localhost:5000/#/experiments/2/runs/1ce85621111a49c3901fc6899805f988
+🧪 View experiment at: http://localhost:5000/#/experiments/2
+
+Done — check localhost:5000
+
