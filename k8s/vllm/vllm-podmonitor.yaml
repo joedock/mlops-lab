@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: vllm-metrics
+  namespace: vllm
+  labels:
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: vllm-server
+  podMetricsEndpoints:
+    - port: vllm-port
+      path: /metrics
+      interval: 15s
